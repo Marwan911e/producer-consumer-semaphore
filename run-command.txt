@@ -1,0 +1,41 @@
+wsl make
+gcc -Wall -Wextra -O2 -pthread -o producer_consumer producer_consumer.c
+
+ecxecute:
+wsl ./producer_consumer
+
+Great! Since you've opened a Linux terminal (WSL), you can now run the producer-consumer program directly. Here are the simple commands:
+
+## **Step 1: Navigate to your project directory**
+```bash
+cd /mnt/c/Users/Marwa/Documents/os
+```
+
+## **Step 2: Compile the program**
+```bash
+make
+```
+
+## **Step 3: Run the program**
+```bash
+./producer_consumer
+```
+
+## **Or do it all in one command:**
+```bash
+cd /mnt/c/Users/Marwa/Documents/os && make && ./producer_consumer
+```
+
+## **Alternative: Direct compilation**
+```bash
+gcc -Wall -Wextra -O2 -pthread -o producer_consumer producer_consumer.c
+./producer_consumer
+```
+
+The program will:
+- Generate 10,000 random numbers (0-1000)
+- Display consumer activities on screen
+- Create `Producer_activity.txt` and `Consumer_activity.txt` files
+- Show synchronization between producer and consumer threads
+
+Just run these commands in your Linux terminal and the program will execute perfectly!
